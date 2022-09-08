@@ -19,12 +19,10 @@ export default {
   <div class="header">
     <img class="logo" src="~/assets/logo.svg" alt="Logo" />
     <div class="links" :class="{ isVisible: visibleMenu }">
-      <nuxt-link to="/" v-on:click="showMenu()"><p>Accueil</p></nuxt-link>
-      <nuxt-link to="/contact" v-on:click="showMenu()"
-        ><p>Contact</p></nuxt-link
-      >
-      <nuxt-link to="/mentions-legales" v-on:click="showMenu()"
-        ><p>Mentions légales</p></nuxt-link
+      <NuxtLink to="/" v-on:click="showMenu()"><p>Accueil</p></NuxtLink>
+      <NuxtLink to="/contact" v-on:click="showMenu()"><p>Contact</p></NuxtLink>
+      <NuxtLink to="/mentions-legales" v-on:click="showMenu()"
+        ><p>Mentions légales</p></NuxtLink
       >
     </div>
     <div class="menu-btn" v-on:click="showMenu()">
@@ -38,6 +36,7 @@ export default {
 <style>
 .header {
   position: fixed;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: space-between;
