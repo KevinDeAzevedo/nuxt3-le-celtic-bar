@@ -43,7 +43,7 @@ export default {
   width: 100%;
   height: 60px;
   background: #ffffff;
-  box-shadow: 0 6px 12px 0 rgba(237, 237, 237, 0.5);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .fixed-header-bottom-fix {
@@ -51,6 +51,7 @@ export default {
 }
 
 .logo {
+  width: 150px;
   margin-left: 20px;
 }
 
@@ -91,7 +92,8 @@ export default {
     top: 60px;
     margin-right: 0;
     row-gap: 40px;
-    background-color: beige;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
     overflow: hidden;
 
     transition: all 0.5s ease-out;

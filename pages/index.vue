@@ -1,77 +1,62 @@
-<script></script>
+<script setup lang="ts">
+import HeroParallax1 from '../components/hero-parallax.vue';
+</script>
 
 <template>
   <div>
-    <div class="hero">
-      <div
-        class="hero-image"
-        style="background-image: url(assets/hero.jpeg)"
-      ></div>
-      <div class="hero-text">
-        <h1>Brand new hero image</h1>
-        <p>Nice effect !</p>
-        <button>Get one</button>
-      </div>
-    </div>
+    <Hero />
     <div class="container">
       <div class="content">
-        <h1>Hello my title</h1>
+        <div class="content-item">
+          <h2>Titre H2</h2>
+          <h3>Sous titre H3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <NuxtLink to="/a-propos"><button>À propos</button></NuxtLink>
+        </div>
+        <div class="content-item">
+          <img src="~/assets/terrasse.jpeg" alt="Photo de terrasse" />
+        </div>
       </div>
     </div>
+    <HeroParallax />
   </div>
 </template>
 
 <style>
-.hero {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(rgb(34, 0, 255), rgba(0, 0, 0));
-  height: 500px;
-  position: relative;
-}
-
-.hero-image {
-  height: 100%;
-  opacity: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-size: cover !important;
-}
-
-.hero-text {
-  align-self: center;
-  text-align: center;
-  position: absolute;
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: rgb(28, 105, 239);
-  color: white;
-}
-
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 1px solid red;
 }
 
 .content {
-  width: 1400px;
-  border: 10px solid green;
+  display: flex;
+  max-width: 1200px;
+  padding: 20px;
+  gap: 12px;
+}
+
+.content-item {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 </style>
