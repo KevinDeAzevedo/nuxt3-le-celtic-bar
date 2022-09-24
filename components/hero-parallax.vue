@@ -14,34 +14,23 @@ var heroImage = ref('assets/maman.jpeg');
         <div class="content">
           <div class="content-item card">
             <h3>Titre H3</h3>
-            <h4>Sous titre H4</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.
+              Profitez de places gratuites pour garer votre véhicule, sur toute
+              l’ile d’Yonne.
             </p>
           </div>
           <div class="content-item card">
             <h3>Titre H3</h3>
-            <h4>Sous titre H4</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.
-            </p>
+            <p>Demandez au comptoir l’accès à internet haut débit !</p>
           </div>
           <div class="content-item card">
             <h3>Titre H3</h3>
-            <h4>Sous titre H4</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Prenez place seul ou à plusieurs, à la fraîche en terrasse.</p>
           </div>
           <div class="content-item card">
             <h3>Titre H3</h3>
-            <h4>Sous titre H4</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.
+              Vivez de moments forts, et regardez les meilleurs matchs en cours.
             </p>
           </div>
         </div>
