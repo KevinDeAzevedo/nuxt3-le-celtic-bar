@@ -15,6 +15,9 @@ export default defineNuxtConfig({
    nuxtUrl: process.env.NUXT_URL,
   },
  },
+ modules: [
+  '@nuxt/content'
+],
  content: {
   // https://content.nuxtjs.org/api/configuration
  }

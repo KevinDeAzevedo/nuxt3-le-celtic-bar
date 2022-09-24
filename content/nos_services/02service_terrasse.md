@@ -1,0 +1,4 @@
+---
+title: "Service en terrasse"
+description: "Prenez place seul ou à plusieurs, à la fraîche en terrasse."
+---
