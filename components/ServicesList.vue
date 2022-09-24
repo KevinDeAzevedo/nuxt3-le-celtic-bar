@@ -10,13 +10,16 @@ const { data: ServicesList } = useAsyncData('ServicesList', () => {
     <h3>
       {{ Service.title }}
     </h3>
-    {{ Service.description }}
+    <p>{{ Service.description }}</p>
   </div>
 </template>
 
 <style>
 .card {
-  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   min-height: 200px;
   background-color: white;
   color: black;
@@ -24,6 +27,11 @@ const { data: ServicesList } = useAsyncData('ServicesList', () => {
 }
 
 .card p {
-  padding: 30px;
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100px;
+  max-height: 100px;
 }
 </style>

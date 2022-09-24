@@ -26,12 +26,12 @@ var heroImage = ref('assets/maman.jpeg');
   flex-direction: column;
   background-image: linear-gradient(rgb(58, 44, 45), rgba(0, 0, 0));
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 @media screen and (max-width: 800px) {
   .hero {
-    height: 900px;
+    height: 950px;
   }
 }
 
