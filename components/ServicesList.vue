@@ -6,7 +6,7 @@ const { data: ServicesList } = useAsyncData('ServicesList', () => {
 
 <template>
   <div v-for="Service in ServicesList" :key="Service._path" class="card">
-    <img :src="`/assets/${Service.icon}`" alt="icone" />
+    <img :src="`/images/${Service.icon}`" alt="icone" />
     <h3>
       {{ Service.title }}
     </h3>

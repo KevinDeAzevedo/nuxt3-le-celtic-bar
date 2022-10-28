@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var heroImage = ref('assets/maman.jpeg');
+var heroImage = ref('/images/maman.jpeg');
 </script>
 
 <template>

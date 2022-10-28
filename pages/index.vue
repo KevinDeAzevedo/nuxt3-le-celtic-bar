@@ -1,4 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <div>
@@ -9,7 +10,7 @@
           <ContentDoc path="/intro" />
         </div>
         <div class="content-item">
-          <img src="~/assets/terrasse.jpeg" alt="Photo de terrasse" />
+          <img src="/images/terrasse.jpeg" alt="Photo de terrasse" />
         </div>
       </div>
     </div>
@@ -26,6 +27,7 @@
 
 .content {
   display: flex;
+  align-items: center;
   max-width: 1200px;
   padding: 20px;
   gap: 12px;
