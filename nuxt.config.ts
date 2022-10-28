@@ -18,7 +18,12 @@ export default defineNuxtConfig({
  modules: [
   '@nuxt/content'
 ],
- content: {
-  // https://content.nuxtjs.org/api/configuration
- }
+  content: {
+    markdown: {
+      tags: {
+        h2: 'ProseH2',
+        h3: 'ProseH3'
+      }
+    }
+  }
 });
