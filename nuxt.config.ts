@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     markdown: {
       tags: {
         h2: 'ProseH2',
-        h3: 'ProseH3'
+        h3: 'ProseH3',
       }
     }
   }

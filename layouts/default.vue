@@ -44,6 +44,7 @@ button {
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
+  font-size: 12px;
   color: black;
   background-color: #ddd;
   text-align: center;
@@ -51,6 +52,23 @@ button {
 }
 
 button:hover {
+  background-color: rgb(10, 170, 106);
+  color: white;
+}
+
+.link-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 12px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link-button:hover {
   background-color: rgb(10, 170, 106);
   color: white;
 }
