@@ -15,13 +15,9 @@
       </div>
     </div>
     <HeroParallax />
-    <ContentList path="/produits-stars" v-slot="{ list }">
-      <div v-for="produit in list" :key="produit._path">
-        <h2>{{ produit.title }}</h2>
-        <p>{{ produit.description }}</p>
-        <p><strong>{{ produit.price }} €</strong></p>
-      </div>
-    </ContentList>
+    <div class="container">
+      <StarsList />
+    </div>
   </div>
 </template>
 
