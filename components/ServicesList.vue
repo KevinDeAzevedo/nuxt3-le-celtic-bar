@@ -19,11 +19,18 @@ const { data: ServicesList } = useAsyncData('ServicesList', () => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  min-height: 200px;
+  min-height: 260px;
   background-color: white;
   color: black;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    min-height: 200px;
+  }
 }
 
 .card p {
