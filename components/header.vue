@@ -17,13 +17,11 @@ export default {
 </script>
 <template>
   <div class="header">
-    <img class="logo" src="~/assets/logo.svg" alt="Logo" />
+    <img class="logo" src="~/assets/logo-le-celtic-noir.svg" alt="Logo" />
     <div class="links" :class="{ isVisible: visibleMenu }">
       <NuxtLink to="/" v-on:click="showMenu()"><p>Accueil</p></NuxtLink>
+      <NuxtLink to="/carte" v-on:click="showMenu()"><p>La carte</p></NuxtLink>
       <NuxtLink to="/contact" v-on:click="showMenu()"><p>Contact</p></NuxtLink>
-      <NuxtLink to="/mentions-legales" v-on:click="showMenu()"
-        ><p>Mentions légales</p></NuxtLink
-      >
     </div>
     <div class="menu-btn" v-on:click="showMenu()">
       <img v-if="!visibleMenu" src="~/assets/burger-btn.svg" alt="Menu" />

@@ -36,12 +36,15 @@
 .liste-produit {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
+  gap: 2%;
 }
 .produit {
   display: flex;
-  width: 50%;
-  padding-bottom: 10px;
+  column-gap: 10px;
+  padding-bottom: 2%;
+  width: 48%;
 }
 @media screen and (max-width: 800px) {
   .produit {
@@ -53,8 +56,10 @@
 }
 .image-produit {
   width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100%;
 }
-
 .color {
   border-bottom: 1px dashed grey;
 }

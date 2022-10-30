@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var heroImage = ref('/images/hero.jpeg');
+var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
 </script>
 
 <template>
@@ -10,10 +10,10 @@ var heroImage = ref('/images/hero.jpeg');
         :style="{ backgroundImage: 'url(' + heroImage + ')' }"
       ></div>
       <div class="hero-text">
-        <h1>The brand new Nuxt 3</h1>
-        <p>Very usefull blog style template based on Nuxt Content V2</p>
+        <h1>Le Celtic bar à Sens</h1>
+        <p>Ouvert et prêt à vous accueillir tous les jours de la semaine.</p>
+        <NuxtLink to="/carte"><button>La carte</button></NuxtLink>
         <NuxtLink to="/contact"><button>Contact</button></NuxtLink>
-        <NuxtLink to="/"><button>Catégories</button></NuxtLink>
       </div>
     </div>
   </div>

@@ -10,7 +10,7 @@
           <ContentDoc path="/intro" />
         </div>
         <div class="content-item">
-          <img src="/images/terrasse.jpeg" alt="Photo de terrasse" />
+          <img src="/images/jose_le_celtic_sens_bar_cafe.jpg" alt="Photo de terrasse" />
         </div>
       </div>
     </div>
