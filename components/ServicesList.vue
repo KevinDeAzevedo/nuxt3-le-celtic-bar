@@ -1,6 +1,6 @@
 <script setup>
 const { data: ServicesList } = useAsyncData('ServicesList', () => {
-  return queryContent('/nos_services').find();
+  return queryContent('/services').find();
 });
 </script>
 

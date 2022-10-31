@@ -26,12 +26,12 @@ var heroImage = ref('/images/bouteilles-vin-hero.jpg');
   flex-direction: column;
   background-image: linear-gradient(rgb(58, 44, 45), rgba(0, 0, 0));
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 @media screen and (max-width: 800px) {
   .hero {
-    height: 950px;
+    height: 1000px;
   }
 }
 
@@ -50,5 +50,17 @@ var heroImage = ref('/images/bouteilles-vin-hero.jpg');
   text-align: center;
   position: absolute;
   color: white;
+}
+
+.hero-text h2 {
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+  gap: 12px;
+  margin: 0;
 }
 </style>

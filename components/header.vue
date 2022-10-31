@@ -17,7 +17,7 @@ export default {
 </script>
 <template>
   <div class="header">
-    <img class="logo" src="~/assets/logo-le-celtic-noir.svg" alt="Logo" />
+    <NuxtLink to="/"><img class="logo" src="~/assets/logo-le-celtic-noir.svg" alt="Logo" /></NuxtLink>
     <div class="links" :class="{ isVisible: visibleMenu }">
       <NuxtLink to="/" v-on:click="showMenu()"><p>Accueil</p></NuxtLink>
       <NuxtLink to="/carte" v-on:click="showMenu()"><p>La carte</p></NuxtLink>

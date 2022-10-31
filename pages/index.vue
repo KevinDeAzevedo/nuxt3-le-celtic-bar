@@ -14,10 +14,15 @@
         </div>
       </div>
     </div>
-    <HeroParallax />
+    <HeroServices />
     <div class="container">
       <StarsList />
     </div>
+    <HeroMatch />
+    <div class="container">
+      <AvisList />
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -34,6 +39,7 @@
   max-width: 1200px;
   padding: 20px;
   gap: 12px;
+  margin: 100px 0 100px 0;
 }
 
 .content-item {

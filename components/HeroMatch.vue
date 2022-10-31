@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
+var heroImage = ref('/images/match-foot-sens-celtic.jpg');
 </script>
 
 <template>
@@ -10,10 +10,7 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
         :style="{ backgroundImage: 'url(' + heroImage + ')' }"
       ></div>
       <div class="hero-text">
-        <h1>Le Celtic bar à Sens</h1>
-        <p>Ouvert et prêt à vous accueillir tous les jours de la semaine.</p>
-        <NuxtLink to="/carte"><button>La carte</button></NuxtLink>
-        <NuxtLink to="/contact"><button>Contact</button></NuxtLink>
+        <ContentDoc path="/match" />
       </div>
     </div>
   </div>
@@ -25,8 +22,14 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(rgb(58, 44, 45), rgba(0, 0, 0));
-  height: 800px;
-  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    height: 300px;
+  }
 }
 
 .hero-image {
@@ -36,6 +39,7 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
   background-repeat: no-repeat;
   overflow: hidden;
   background-size: cover !important;
+  background-attachment: fixed;
 }
 
 .hero-text {

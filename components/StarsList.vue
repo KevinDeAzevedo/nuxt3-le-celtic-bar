@@ -2,7 +2,7 @@
 
 <template>
   <div class="content">
-    <div class="centered-title">
+    <div class="centered-item">
       <h2>Nos produits stars</h2>
     </div>
     <div class="liste-produit">
@@ -20,6 +20,9 @@
       </div>
     </ContentList>
     </div>
+    <div class="centered-item">
+      <NuxtLink to="/carte"><button>Voir toute la carte</button></NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -28,8 +31,9 @@
   display: flex;
   flex-direction: column;
   width: 1200px;
+    margin: 100px 0 100px 0;
 }
-.centered-title {
+.centered-item {
   align-self: center;
   text-align: center;
 }
