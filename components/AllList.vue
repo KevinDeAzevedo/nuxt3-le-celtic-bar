@@ -56,6 +56,32 @@
     <div class="white-bg">
       <div class="content-zone">
         <div class="centered-item">
+          <h2>Vins Et Spiritueux</h2>
+        </div>
+        <div class="liste-produit">
+          <ContentList path="/produits/vins" v-slot="{ list }">
+            <div v-for="produit in list" :key="produit._path" class="produit">
+              <img
+                :src="`/images/produits/${produit.image}`"
+                alt="image"
+                class="image-produit"
+              />
+              <div class="info-produit">
+                <h2>{{ produit.title }}</h2>
+                <p>{{ produit.description }}</p>
+                <div class="color"></div>
+              </div>
+              <p>
+                <strong>{{ produit.price }}€</strong>
+              </p>
+            </div>
+          </ContentList>
+        </div>
+      </div>
+    </div>
+    <div class="grey-bg">
+      <div class="content-zone">
+        <div class="centered-item">
           <h2>Les cocktails</h2>
         </div>
         <div class="liste-produit">
@@ -79,7 +105,7 @@
         </div>
       </div>
     </div>
-    <div class="grey-bg">
+    <div class="white-bg">
       <div class="content-zone">
         <div class="centered-item">
           <h2>Les sandwichs</h2>
