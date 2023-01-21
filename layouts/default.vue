@@ -23,7 +23,6 @@ body {
   line-height: initial;
   color: #2A1111;
   scroll-behavior: smooth;
-  border: 1px solid green;
 }
 
 h1,h2,h3 {
@@ -34,7 +33,7 @@ h1,h2,h3 {
 
 h1 {
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: 4.2rem;
 }
 
 h2 {
@@ -98,24 +97,36 @@ a {
 }
 
 a:hover {
-  color: rgb(10, 170, 106);
+  color: #ED9C3B;
 }
 
 button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 10px 25px;
-  font-size: 12px;
-  color: black;
-  background-color: #ddd;
+  padding: 15px 42px;
+  border-radius: 50px;
   text-align: center;
   cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
-button:hover {
-  background-color: rgb(10, 170, 106);
+button.primary-btn {
   color: white;
+  background-color: #2A1111;
+}
+
+button.secondary-btn {
+  color: #2A1111;
+  background-color: #FFB863;
+}
+
+button.primary-btn:hover, .secondary-btn:hover{
+  color: #2A1111;
+  background-color: #FDDAB0;
 }
 
 .link-button {

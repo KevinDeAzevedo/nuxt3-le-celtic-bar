@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
+const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
 </script>
 
 <template>
@@ -10,28 +10,33 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
         :style="{ backgroundImage: 'url(' + heroImage + ')' }"
       ></div>
       <div class="hero-text">
+        <div class='arabesque'><img src="../assets/arabesque01.svg" alt="Illustration arabesque"></div>
         <h1>Le Celtic bar à Sens</h1>
         <p>Ouvert et prêt à vous accueillir tous les jours de la semaine.</p>
-        <NuxtLink to="/carte"><button>La carte</button></NuxtLink>
-        <NuxtLink to="/contact"><button>Contact</button></NuxtLink>
+        <div class='arabesque'><img src="../assets/arabesque02.svg" alt="Illustration arabesque"></div>
+        <div class='cta-butons'>
+          <NuxtLink to="/carte"><button class='secondary-btn'>La carte</button></NuxtLink>
+          <NuxtLink to="/contact"><button class='primary-btn'>Contact</button></NuxtLink>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+
 .hero {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(rgb(58, 44, 45), rgba(0, 0, 0));
-  height: 800px;
+  background-color: #170D0D;
+  height: 700px;
   position: relative;
 }
 
 .hero-image {
   height: 100%;
-  opacity: 50%;
+  opacity: 40%;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -44,4 +49,26 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
   position: absolute;
   color: white;
 }
+
+.arabesque img {
+  width: 100px;
+  height: 46px;
+}
+
+.cta-butons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cta-butons button{
+  margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .cta-butons {
+  flex-direction: column;
+}
+}
+
 </style>
