@@ -90,8 +90,6 @@ export default {
 
 
 @media screen and (max-width: 590px) {
-
-
   .links {
     opacity: 0%;
     right: -100%;
