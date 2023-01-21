@@ -17,7 +17,9 @@ export default {
 </script>
 <template>
   <div class="header">
-    <NuxtLink to="/"><img class="logo" src="~/assets/logo-le-celtic-noir.svg" alt="Logo" /></NuxtLink>
+    <div class="header--elements">
+      <!--<NuxtLink to="/"><img class="logo" src="~/assets/logo-le-celtic-noir.svg" alt="Logo" /></NuxtLink>-->
+      <div class='logo'><NuxtLink to="/"><img src="~/assets/logo-le-celtic-noir.svg" alt="Logo" /></NuxtLink></div>
     <div class="links" :class="{ isVisible: visibleMenu }">
       <NuxtLink to="/" v-on:click="showMenu()"><p>Accueil</p></NuxtLink>
       <NuxtLink to="/carte" v-on:click="showMenu()"><p>La carte</p></NuxtLink>
@@ -27,37 +29,48 @@ export default {
       <img v-if="!visibleMenu" src="~/assets/burger-btn.svg" alt="Menu" />
       <img v-else="visibleMenu" src="~/assets/close.svg" alt="Fermer" />
     </div>
+    </div>
   </div>
-  <div class="fixed-header-bottom-fix"></div>
 </template>
 
 <style>
 .header {
   position: fixed;
   z-index: 99;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;  
+}
+
+.header--elements {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 800px;
   width: 100%;
-  height: 60px;
-  background: #ffffff;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
-}
-
-.fixed-header-bottom-fix {
-  height: 60px;
+  height: auto;
+  margin: 0 20px 0 20px;
+  padding: 0 15px 0 5px;
+  background-color: white;
+  box-shadow: 0 6px 42px 0 rgba(42,17,17,0.24);
+  border-radius: 100px;
 }
 
 .logo {
-  width: 150px;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 200px;
+  height: 75px;
 }
 
 .links {
   display: flex;
   width: auto;
   margin-right: 20px;
-  column-gap: 40px;
+  column-gap: 3rem;
 }
 
 .links p {
@@ -70,13 +83,15 @@ export default {
   cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-  .links p {
-    font-size: 18px;
-  }
+.menu-btn img {
+  width: 15px;
+  height: auto;
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 590px) {
+
+
   .links {
     opacity: 0%;
     right: -100%;

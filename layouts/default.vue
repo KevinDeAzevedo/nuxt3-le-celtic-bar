@@ -21,6 +21,11 @@ body {
   line-height: initial;
   color: black;
   scroll-behavior: smooth;
+  border: 1px solid green;
+}
+
+* {
+  box-sizing: border-box; /* helpfull to force padding inside blocks do not break the layout */
 }
 
 p,
@@ -29,6 +34,13 @@ h2,
 h3 {
   margin: 0;
 }
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 
 a {
   text-decoration: none;

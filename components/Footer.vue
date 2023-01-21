@@ -47,7 +47,7 @@
  width: 100%;
 }
 .logo-footer {
- width: 300px;
+ width: 100%;
  height: auto;
 }
 iframe {
