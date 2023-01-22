@@ -31,6 +31,7 @@
   color: white;
   height: 600px;
   position: relative;
+  border: 1px solid green;
 }
 .content {
  display: flex;

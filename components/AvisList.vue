@@ -30,6 +30,7 @@ const { data: AvisList } = useAsyncData('AvisList', () => {
   display: flex;
   flex-direction: column;
   width: 1200px;
+  overflow: hidden;
 }
 
 .content-items {

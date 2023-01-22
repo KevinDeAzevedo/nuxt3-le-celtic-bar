@@ -18,7 +18,7 @@
     </div>
     <HeroServices />
     <div class="container">
-      <!--<StarsList />-->
+      <StarsList />
     </div>
     <HeroMatch />
     <div class="container">
