@@ -10,12 +10,12 @@ const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
         :style="{ backgroundImage: 'url(' + heroImage + ')' }"
       ></div>
       <div class="hero-text">
-        <div class='arabesque'><img src="../assets/arabesque01.svg" alt="Illustration arabesque"></div>
+        <div class='arabesque'><img src="~/assets/arabesque01.svg" alt="Illustration arabesque"></div>
         <div class="title">
           <h1>Le Celtic bar à Sens</h1>
         </div>
         <p>Ouvert et prêt à vous accueillir tous les jours de la semaine.</p>
-        <div class='arabesque'><img src="../assets/arabesque02.svg" alt="Illustration arabesque"></div>
+        <div class='arabesque'><img src="~/assets/arabesque02.svg" alt="Illustration arabesque"></div>
         <div class='cta-butons'>
           <NuxtLink to="/carte"><button class='secondary-btn'>La carte</button></NuxtLink>
           <NuxtLink to="/contact"><button class='primary-btn'>Contact</button></NuxtLink>
@@ -25,7 +25,7 @@ const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
   </div>
 </template>
 
-<style scoped>
+<style>
 
 .hero {
   display: flex;
@@ -38,7 +38,7 @@ const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
 
 .hero-image {
   height: 100%;
-  opacity: 40%;
+  opacity: 30%;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
