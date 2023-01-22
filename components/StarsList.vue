@@ -58,6 +58,8 @@
 
 .produit p {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .info-produit {
@@ -91,6 +93,12 @@
   }
   .price {
     position: relative;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .produit {
+    flex-direction: column;
   }
 }
 </style>
