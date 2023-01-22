@@ -5,40 +5,52 @@ const { data: ServicesList } = useAsyncData('ServicesList', () => {
 </script>
 
 <template>
-  <div v-for="Service in ServicesList" :key="Service._path" class="card">
+  <div class='card-list'>
+    <div v-for="Service in ServicesList" :key="Service._path" class="card">
     <img :src="`/images/${Service.icon}`" alt="icone" />
     <h3>
       {{ Service.title }}
     </h3>
     <p>{{ Service.description }}</p>
   </div>
+  </div>
 </template>
 
 <style>
+
+.card-list {
+  display: flex;
+  column-gap: 1rem;
+  margin: 10px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 30px 20px;
   width: 100%;
-  min-height: 260px;
+  text-align: center;
   background-color: white;
   color: black;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width: 800px) {
-  .card {
-    min-height: 200px;
-  }
-}
-
-.card p {
-  padding: 20px;
+  border-radius: 40px;
 }
 
 .card img {
-  max-width: 100px;
-  max-height: 100px;
+  width: 60px;
+  height: 60px;
 }
+
+@media screen and (max-width: 800px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 1rem;
+  }
+  .card {
+    padding: 10px 20px;
+  }
+}
+
 </style>
