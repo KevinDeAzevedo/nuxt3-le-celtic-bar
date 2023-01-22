@@ -5,36 +5,34 @@ var heroImage = ref('/images/match-foot-sens-celtic.jpg');
 <template>
   <div>
     <div class="hero">
+      <div class='content'>
+        <ContentDoc path="/match" />
+      </div>
       <div
         class="hero-image"
         :style="{ backgroundImage: 'url(' + heroImage + ')' }"
       ></div>
-      <div class="hero-text">
-        <ContentDoc path="/match" />
-      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
 .hero {
+  position: relative;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgb(58, 44, 45), rgba(0, 0, 0));
+  background-color: #170D0D;
   width: 100%;
-  height: 400px;
-}
-
-@media screen and (max-width: 800px) {
-  .hero {
-    height: 300px;
-  }
+  height: auto;
 }
 
 .hero-image {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   height: 100%;
-  opacity: 50%;
+  opacity: 20%;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -42,10 +40,11 @@ var heroImage = ref('/images/match-foot-sens-celtic.jpg');
   background-attachment: fixed;
 }
 
-.hero-text {
-  align-self: center;
+.content {
+  z-index: 2;
+  max-width: 800px;
   text-align: center;
-  position: absolute;
   color: white;
 }
+
 </style>
