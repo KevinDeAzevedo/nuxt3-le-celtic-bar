@@ -9,18 +9,16 @@ const { data: AvisList } = useAsyncData('AvisList', () => {
       <h2>Les avis de nos clients</h2>
     <div class="content-items">
       <div v-for="Avis in AvisList" :key="Avis._path" class="avis-card">
-        <div class="avatar">
-          <p>
-          <strong>{{ Avis.score }}</strong>
-          </p>
-        <img :src="`/images/avatars/${Avis.image}`" alt="avatar"/>
-        </div>
-        <h3>{{ Avis.name }}</h3>
+        <img class='bubble' src="~/assets/bubble-speech.svg" alt="Illustration de bulle de dialogue">
         <p>{{ Avis.text }}</p>
+        <div class='baseline'>
+          <p class='price'>{{ Avis.score }}/5</p>
+          <p class='name'>{{ Avis.name }}</p>
+        </div>
       </div>
     </div>
     <div>
-      <nuxt-link to="https://g.page/r/CevH0Jv999vkEBM/review" target='_blank'><button>Écrire un avis</button></nuxt-link>
+      <nuxt-link to="https://g.page/r/CevH0Jv999vkEBM/review" target='_blank'><button class='primary-btn'>Écrire un avis</button></nuxt-link>
     </div>
   </div>
 </template>
@@ -30,46 +28,52 @@ const { data: AvisList } = useAsyncData('AvisList', () => {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  overflow: hidden;
 }
 
 .content-items {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  gap: 2%;
+  margin-top: 30px;
 }
 .avis-card {
-  width: 28%;
-  padding: 2%;
-  margin-bottom: 2%;
+  position: relative;
+  width: 30%;
+  padding: 30px;
+  margin-bottom: 4%;
   background-color: white;
   color: black;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.avatar {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 100%;
+  border: 1px solid #D7D7D7;
+  border-radius: 40px;
 }
 
-.avatar p {
+.avis-card p{
+  margin: 3% 0;
+}
+
+.baseline{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bubble {
   position: absolute;
-  font-size: 12px;
+  top: -10px;
+  left: -10px;
+  width: 34px;
+  height: 40px;
 }
 
 @media screen and (max-width: 800px) {
-  .content-items {
-    flex-direction: row;
-  }
   .avis-card {
-  width: 41%;
-  padding: 4%;
+    width: 48%;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .avis-card {
+    width: 100%;
+  }
 }
 </style>

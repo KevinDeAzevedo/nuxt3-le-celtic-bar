@@ -2,10 +2,12 @@
 
 <template>
   <div>
-    Footer ici
+    <h1>F</h1>
   </div>
 </template>
 
 <style scoped>
-
+.test {
+  color: red;
+}
 </style>

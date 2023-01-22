@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="49px" viewBox="0 0 40 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bubble-speech</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accueil" transform="translate(-95.000000, -3577.000000)" fill="#2A1111" fill-rule="nonzero">
+            <g id="Avis" transform="translate(0.000000, 3384.000000)">
+                <g id="card" transform="translate(95.003000, 193.000000)">
+                    <g id="bubble-speech" transform="translate(-0.000000, 0.000000)">
+                        <path d="M19.815,0 C8.871,0 1.13686838e-13,8.871 1.13686838e-13,19.816 C1.13686838e-13,30.675 8.736,39.489 19.562,39.625 L19.562,48.055 L33.102,34.516 C37.112,30.89 39.632,25.647 39.632,19.816 C39.63,8.871 30.758,0 19.815,0 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
