@@ -10,7 +10,9 @@
           <ContentDoc path="/intro" />
         </div>
         <div class="content-item">
-          <img src="/images/jose_le_celtic_sens_bar_cafe.jpg" alt="Photo de terrasse" />
+          <div class='content-item-photo'>
+            <img src="/images/Jose-du-bar-le-celtic.png" alt="Photo du patron derrière son bar servant un cocktail" />
+          </div>
         </div>
       </div>
     </div>
@@ -44,6 +46,15 @@
 
 .content-item {
   width: 100%;
+}
+
+.content-item-photo {
+  margin: auto;
+  max-width: 400px;
+}
+
+.content-item-photo img {
+  border-radius: 40px;
 }
 
 @media screen and (max-width: 800px) {
