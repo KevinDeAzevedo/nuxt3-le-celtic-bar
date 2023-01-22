@@ -11,7 +11,9 @@ const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
       ></div>
       <div class="hero-text">
         <div class='arabesque'><img src="../assets/arabesque01.svg" alt="Illustration arabesque"></div>
-        <h1>Le Celtic bar à Sens</h1>
+        <div class="title">
+          <h1>Le Celtic bar à Sens</h1>
+        </div>
         <p>Ouvert et prêt à vous accueillir tous les jours de la semaine.</p>
         <div class='arabesque'><img src="../assets/arabesque02.svg" alt="Illustration arabesque"></div>
         <div class='cta-butons'>
@@ -44,6 +46,7 @@ const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
 }
 
 .hero-text {
+  margin-top: 80px;
   align-self: center;
   text-align: center;
   position: absolute;
@@ -66,6 +69,9 @@ const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
 }
 
 @media screen and (max-width: 400px) {
+  .title h1 {
+  font-size: 10vw;
+}
   .cta-butons {
   flex-direction: column;
 }

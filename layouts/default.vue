@@ -28,6 +28,7 @@ body {
 h1,h2,h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  line-height: 1.2em;
   margin: 0;
 }
 
