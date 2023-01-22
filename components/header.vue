@@ -33,7 +33,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .header {
   position: fixed;
   z-index: 99;
