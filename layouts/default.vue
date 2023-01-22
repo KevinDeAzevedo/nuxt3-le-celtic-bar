@@ -75,6 +75,13 @@ p.price {
   text-transform: uppercase;
 }
 
+p.scoring {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #ED9C3B;
+  text-transform: uppercase;
+}
+
 p.name {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;

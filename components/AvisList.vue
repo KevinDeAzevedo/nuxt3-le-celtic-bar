@@ -12,7 +12,7 @@ const { data: AvisList } = useAsyncData('AvisList', () => {
         <img class='bubble' src="~/assets/bubble-speech.svg" alt="Illustration de bulle de dialogue">
         <p>{{ Avis.text }}</p>
         <div class='baseline'>
-          <p class='price'>{{ Avis.score }}/5</p>
+          <p class='scoring'>{{ Avis.score }}/5</p>
           <p class='name'>{{ Avis.name }}</p>
         </div>
       </div>

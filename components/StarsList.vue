@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="content">
+  <div class="content-wrapper">
     <div class="centered-item">
       <h2>Nos produits stars</h2>
     </div>
@@ -30,8 +30,8 @@
   </div>
 </template>
 
-<style scoped>
-.content {
+<style>
+.content-wrapper {
   display: flex;
   flex-direction: column;
   width: 1200px;

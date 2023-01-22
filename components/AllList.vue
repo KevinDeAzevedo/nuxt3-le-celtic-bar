@@ -9,21 +9,19 @@
         <div class="liste-produit">
           <ContentList path="/produits/boissons" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
-              <img
-                :src="`/images/produits/${produit.image}`"
-                alt="image"
-                class="image-produit"
-              />
-              <div class="info-produit">
-                <h2>{{ produit.title }}</h2>
-                <p>{{ produit.description }}</p>
-                <div class="color"></div>
-              </div>
-              <p>
-                <strong>{{ produit.price }}€</strong>
-              </p>
-            </div>
-          </ContentList>
+          <img
+            :src="`/images/produits/${produit.image}`"
+            alt="image"
+            class="image-produit"
+          />
+          <div class="info-produit">
+            <p class="product">{{ produit.title }}</p>
+            <p class="description">{{ produit.description }}</p>
+            <p class="price">{{ produit.price }}€</p>
+            <div class="separation"></div>
+          </div>
+        </div>
+      </ContentList>
         </div>
       </div>
     </div>
@@ -35,21 +33,19 @@
         <div class="liste-produit">
           <ContentList path="/produits/bieres" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
-              <img
-                :src="`/images/produits/${produit.image}`"
-                alt="image"
-                class="image-produit"
-              />
-              <div class="info-produit">
-                <h2>{{ produit.title }}</h2>
-                <p>{{ produit.description }}</p>
-                <div class="color"></div>
-              </div>
-              <p>
-                <strong>{{ produit.price }}€</strong>
-              </p>
-            </div>
-          </ContentList>
+          <img
+            :src="`/images/produits/${produit.image}`"
+            alt="image"
+            class="image-produit"
+          />
+          <div class="info-produit">
+            <p class="product">{{ produit.title }}</p>
+            <p class="description">{{ produit.description }}</p>
+            <p class="price">{{ produit.price }}€</p>
+            <div class="separation"></div>
+          </div>
+        </div>
+      </ContentList>
         </div>
       </div>
     </div>
@@ -61,21 +57,19 @@
         <div class="liste-produit">
           <ContentList path="/produits/vins" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
-              <img
-                :src="`/images/produits/${produit.image}`"
-                alt="image"
-                class="image-produit"
-              />
-              <div class="info-produit">
-                <h2>{{ produit.title }}</h2>
-                <p>{{ produit.description }}</p>
-                <div class="color"></div>
-              </div>
-              <p>
-                <strong>{{ produit.price }}€</strong>
-              </p>
-            </div>
-          </ContentList>
+          <img
+            :src="`/images/produits/${produit.image}`"
+            alt="image"
+            class="image-produit"
+          />
+          <div class="info-produit">
+            <p class="product">{{ produit.title }}</p>
+            <p class="description">{{ produit.description }}</p>
+            <p class="price">{{ produit.price }}€</p>
+            <div class="separation"></div>
+          </div>
+        </div>
+      </ContentList>
         </div>
       </div>
     </div>
@@ -87,21 +81,19 @@
         <div class="liste-produit">
           <ContentList path="/produits/cocktails" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
-              <img
-                :src="`/images/produits/${produit.image}`"
-                alt="image"
-                class="image-produit"
-              />
-              <div class="info-produit">
-                <h2>{{ produit.title }}</h2>
-                <p>{{ produit.description }}</p>
-                <div class="color"></div>
-              </div>
-              <p>
-                <strong>{{ produit.price }}€</strong>
-              </p>
-            </div>
-          </ContentList>
+          <img
+            :src="`/images/produits/${produit.image}`"
+            alt="image"
+            class="image-produit"
+          />
+          <div class="info-produit">
+            <p class="product">{{ produit.title }}</p>
+            <p class="description">{{ produit.description }}</p>
+            <p class="price">{{ produit.price }}€</p>
+            <div class="separation"></div>
+          </div>
+        </div>
+      </ContentList>
         </div>
       </div>
     </div>
@@ -113,21 +105,19 @@
         <div class="liste-produit">
           <ContentList path="/produits/sandwichs" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
-              <img
-                :src="`/images/produits/${produit.image}`"
-                alt="image"
-                class="image-produit"
-              />
-              <div class="info-produit">
-                <h2>{{ produit.title }}</h2>
-                <p>{{ produit.description }}</p>
-                <div class="color"></div>
-              </div>
-              <p>
-                <strong>{{ produit.price }}€</strong>
-              </p>
-            </div>
-          </ContentList>
+          <img
+            :src="`/images/produits/${produit.image}`"
+            alt="image"
+            class="image-produit"
+          />
+          <div class="info-produit">
+            <p class="product">{{ produit.title }}</p>
+            <p class="description">{{ produit.description }}</p>
+            <p class="price">{{ produit.price }}€</p>
+            <div class="separation"></div>
+          </div>
+        </div>
+      </ContentList>
         </div>
       </div>
     </div>
@@ -159,13 +149,7 @@
   align-self: center;
   text-align: center;
 }
-.liste-produit {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  gap: 2%;
-}
+
 .grey-section {
   display: flex;
   justify-content: center;
@@ -174,28 +158,5 @@
   width: 100%;
   height: auto;
   position: relative;
-}
-.produit {
-  display: flex;
-  column-gap: 10px;
-  padding-bottom: 2%;
-  width: 48%;
-}
-@media screen and (max-width: 800px) {
-  .produit {
-    width: 100%;
-  }
-}
-.info-produit {
-  width: 100%;
-}
-.image-produit {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: 100%;
-}
-.color {
-  border-bottom: 1px dashed grey;
 }
 </style>
