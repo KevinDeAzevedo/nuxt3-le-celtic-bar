@@ -130,15 +130,13 @@ button.primary-btn:hover, .secondary-btn:hover{
   background-color: #FDDAB0;
 }
 
-.link-secondary-button {
+.link-button {
   border: none;
   outline: 0;
   display: inline-block;
   padding: 15px 42px;
   margin: 10px 0;
   font-size: 12px;
-  color: white;
-  background-color: #2A1111;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
@@ -146,6 +144,21 @@ button.primary-btn:hover, .secondary-btn:hover{
   font-weight: 400;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+.link-primary-button {
+  color: white;
+  background-color: #2A1111;
+}
+
+.link-primary-button:hover {
+  color: #2A1111;
+  background-color: #FDDAB0;
+}
+
+.link-secondary-button {
+  color: #2A1111;
+  background-color: #FFB863;
 }
 
 .link-secondary-button:hover {
