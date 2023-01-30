@@ -1,11 +1,16 @@
 <script setup lang="ts">
+import type { form } from '~/types'
+import type { Strapi4Response } from '@nuxtjs/strapi'
+const { create } = useStrapi4()
+const onSubmit = async () => {
+  await create<Strapi4Response<form>>('forms', { mailAddress: mailAddress.value , firstName: firstName.value,  lastName: lastName.value, comments: comments.value })
+}
+
 /* Data form */
-var firstName = ref('');
-var lastName = ref('');
-var mailAddress = ref('');
-var comments = ref('');
-let sendingMessage = ref('');
-let sended = ref(false);
+const firstName = ref('')
+const lastName = ref('')
+const mailAddress = ref('')
+const comments = ref('')
 </script>
 
 <template>
@@ -21,14 +26,9 @@ let sended = ref(false);
         required
       />
       <BaseTextArea v-model="comments" label="Votre message" />
-      <div v-if="sended">
-        <p>{{ sendingMessage }}</p>
-      </div>
-      <div v-else>
         <button class="submitButton" type="submit" value="Send">
           Envoyer
         </button>
-      </div>
     </form>
   </div>
 </template>

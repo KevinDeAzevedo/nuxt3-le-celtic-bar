@@ -14,8 +14,16 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/strapi'
   ],
+  strapi: {
+    url: process.env.STRAPI_URL,
+    prefix: '/api',
+    version: 'v4',
+    cookie: {},
+    cookieName: 'strapi_jwt'
+  },
   content: {
     markdown: {
       tags: {

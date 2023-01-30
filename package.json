@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.3.0",
+    "@nuxtjs/strapi": "^1.7.1",
     "nuxt": "^3.0.0"
   }
 }
