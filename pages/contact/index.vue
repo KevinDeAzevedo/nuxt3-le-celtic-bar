@@ -2,12 +2,13 @@
 import type { form } from '~/types'
 import type { Strapi4Response } from '@nuxtjs/strapi'
 const { create } = useStrapi4()
+
 const onSubmit = async () => {
     try {
       await create<Strapi4Response<form>>('forms', { mailAddress: mailAddress.value , firstName: firstName.value,  lastName: lastName.value, comments: comments.value })
-      document.querySelector('#sendErrorMsg').textContent = 'Envoyé !'
+        response.value = 'Envoyé !'
     } catch (error) {
-      document.querySelector('#sendErrorMsg').textContent = 'Oups une erreur est survenue...'
+        response.value = 'Oups une erreur est survenue...'
   }
 }
 
@@ -40,10 +41,11 @@ function validateName(nameParam, errorIdParam, alertMessageParam){
 }
 
 /* Data form */
-const firstName = ref('')
-const lastName = ref('')
-const mailAddress = ref('')
-const comments = ref('')
+let firstName = ref('')
+let lastName = ref('')
+let mailAddress = ref('')
+let comments = ref('')
+let response= ref('')
 </script>
 
 <template>
@@ -66,7 +68,7 @@ const comments = ref('')
         <button class="submitButton" type="submit" value="Send">
           Envoyer
         </button>
-        <div id='sendErrorMsg'></div>
+        <div>{{ response }}</div>
     </form>
   </div>
 </template>
