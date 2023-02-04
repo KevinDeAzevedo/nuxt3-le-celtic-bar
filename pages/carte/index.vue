@@ -18,6 +18,7 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
     <AllList />
     <Submenu />
     <Footer />
+    <div class='offset-for-submenu'></div>
   </div>
 </template>
 
@@ -49,5 +50,10 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
 
 .tiny-hero-text h1{
   font-size: 3.5rem;
+}
+
+.offset-for-submenu {
+  width: 100%;
+  height: 100px;
 }
 </style>
