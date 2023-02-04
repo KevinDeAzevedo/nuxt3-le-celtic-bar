@@ -20,7 +20,7 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
   </div>
 </template>
 
-<style scoped>
+<style>
 .tiny-hero {
   display: flex;
   justify-content: center;
