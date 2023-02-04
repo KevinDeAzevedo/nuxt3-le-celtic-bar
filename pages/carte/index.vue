@@ -61,6 +61,6 @@ useHead({
 
 .offset-for-submenu {
   width: 100%;
-  height: 100px;
+  height: 150px;
 }
 </style>
