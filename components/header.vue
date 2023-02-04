@@ -41,7 +41,7 @@ export default {
   height: auto;
   margin-top: 40px;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .header--elements {
@@ -90,6 +90,9 @@ export default {
 
 
 @media screen and (max-width: 590px) {
+  .header {
+  margin-top: 25px;
+}
   .links {
     opacity: 0%;
     right: -100%;

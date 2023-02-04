@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <div class="white-bg">
+    <div class="white-bg" id='boissons'>
       <div class="content-zone">
         <div class="centered-item">
           <h2>Les boissons</h2>
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="grey-bg">
+    <div id='bieres' class="grey-bg">
       <div class="content-zone">
         <div class="centered-item">
           <h2>Les bières</h2>
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="white-bg">
+    <div class="white-bg" id='vins'>
       <div class="content-zone">
         <div class="centered-item">
           <h2>Vins Et Spiritueux</h2>
@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="grey-bg">
+    <div class="grey-bg" id='cocktails'>
       <div class="content-zone">
         <div class="centered-item">
           <h2>Les cocktails</h2>
@@ -97,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="white-bg">
+    <div class="white-bg" id='sandwichs'>
       <div class="content-zone">
         <div class="centered-item">
           <h2>Les sandwichs</h2>

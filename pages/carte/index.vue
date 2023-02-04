@@ -16,6 +16,7 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
       </div>
     </div>
     <AllList />
+    <Submenu />
     <Footer />
   </div>
 </template>
