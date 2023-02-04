@@ -95,26 +95,26 @@ export default {
 }
   .links {
     opacity: 0%;
-    right: -100%;
+    margin-top: -100%;
+    margin-left: 9%;
+    width: 70%;
     position: absolute;
+    display: flex;
     flex-direction: column;
-    align-self: flex-start;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    top: 60px;
-    margin-right: 0;
-    row-gap: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
+    height: auto;
+    top: 75px;
+    row-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 13px 21px -2px rgba(0,0,0,0.07);
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
     overflow: hidden;
-
-    transition: all 0.5s ease-out;
+    transition: all 0.2s ease-out;
   }
   .isVisible {
     opacity: 100%;
-    right: 0%;
+    margin-top: 0;
   }
   .menu-btn {
     display: block;
