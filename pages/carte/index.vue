@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
+var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.webp');
 
 useHead({
   htmlAttrs: {

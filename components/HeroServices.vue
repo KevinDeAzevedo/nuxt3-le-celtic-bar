@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var heroImage = ref('/images/bouteilles-vin-hero.jpg');
+var heroImage = ref('/images/bouteilles-vin-hero.webp');
 </script>
 
 <template>

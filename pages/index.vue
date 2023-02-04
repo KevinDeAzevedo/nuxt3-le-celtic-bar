@@ -19,7 +19,7 @@ useHead({
         </div>
         <div class="content-item">
           <div class='content-item-photo'>
-            <img src="/images/Jose-du-bar-le-celtic.png" alt="Photo du patron derrière son bar servant un cocktail" />
+            <img src="/images/Jose-du-bar-le-celtic.webp" alt="Photo du patron derrière son bar servant un cocktail" />
           </div>
         </div>
       </div>

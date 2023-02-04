@@ -72,7 +72,7 @@ let mailAddress = ref('');
 let comments = ref('');
 let response = ref('');
 
-var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
+var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.webp');
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var heroImage = ref('/images/match-foot-sens-celtic.jpg');
+var heroImage = ref('/images/match-foot-sens-celtic.webp');
 </script>
 
 <template>

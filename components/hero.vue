@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.jpg');
+const heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.webp');
 </script>
 
 <template>
