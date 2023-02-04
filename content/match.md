@@ -2,5 +2,5 @@
 
 Profitez des meilleurs conditions pour vivre des moments d'exception devant un match et supportez votre équipe préférée !
 
-[S'y rendre](https://www.lequipe.fr/Directs){.link-button .link-secondary-button}
+[S'y rendre](https://goo.gl/maps/NoHuKcA4fBxX5DsD9){.link-button .link-secondary-button}
 
