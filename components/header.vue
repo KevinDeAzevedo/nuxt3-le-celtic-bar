@@ -19,7 +19,7 @@ export default {
   <div class="header">
     <div class="header--elements">
       <!--<NuxtLink to="/"><img class="logo" src="~/assets/logo-le-celtic-noir.svg" alt="Logo" /></NuxtLink>-->
-      <div class='logo'><NuxtLink to="/"><img src="~/assets/logo-le-celtic-noir.svg" alt="Logo" /></NuxtLink></div>
+      <div class='logo-container'><NuxtLink to="/"><img src="~/assets/logo-le-celtic-noir.svg" alt="Logo" class='logo'/></NuxtLink></div>
     <div class="links" :class="{ isVisible: visibleMenu }">
       <NuxtLink to="/" v-on:click="showMenu()"><p>Accueil</p></NuxtLink>
       <NuxtLink to="/carte" v-on:click="showMenu()"><p>La carte</p></NuxtLink>
@@ -58,12 +58,15 @@ export default {
   border-radius: 100px;
 }
 
-.logo {
+.logo-container {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding-left: 15px;
+}
+
+.logo {
   width: 200px;
-  height: 75px;
+  height: auto;
 }
 
 .links {
@@ -88,11 +91,17 @@ export default {
   height: auto;
 }
 
-
 @media screen and (max-width: 590px) {
   .header {
+  height: 60px;
   margin-top: 25px;
-}
+  }
+
+  .logo {
+  width: 100%;
+  height: auto;
+  }
+
   .links {
     opacity: 0%;
     margin-top: -100%;
