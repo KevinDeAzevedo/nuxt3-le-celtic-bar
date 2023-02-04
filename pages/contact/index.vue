@@ -4,6 +4,9 @@ import type { Strapi4Response } from '@nuxtjs/strapi';
 const { create } = useStrapi4();
 
 useHead({
+  htmlAttrs: {
+      lang: 'fr'
+    },
   meta: [
     { name: 'description', content: `Entrez en contact avec nous au Celtic Bar de Sens pour toutes vos questions et pour garantir un moment inoubliable. Nous sommes là pour vous aider.` }
   ]

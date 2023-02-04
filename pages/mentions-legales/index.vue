@@ -1,4 +1,9 @@
-<script></script>
+<script setup lang='ts'>
+useHead({
+  htmlAttrs: {
+      lang: 'fr'
+    }
+})</script>
 
 <template>
   <div class='container'>

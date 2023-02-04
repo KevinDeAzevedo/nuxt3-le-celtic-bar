@@ -1,5 +1,8 @@
 <script setup lang="ts">
 useHead({
+  htmlAttrs: {
+      lang: 'fr'
+    },
   meta: [
     { name: 'description', content: `Découvrez l'ambiance chaleureuse et les boissons exceptionnelles de notre bar situé en plein coeur de Sens. Rejoignez-nous pour passer une soirée mémorable avec des amis ou en solo.` }
   ]
