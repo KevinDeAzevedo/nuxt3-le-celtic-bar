@@ -7,6 +7,7 @@
       <img src="~/assets/line-left.svg" alt="">
       <img src="~/assets/line-right.svg" alt="">
     </div>
+    <nuxt-link to="/mentions-legales">Mention légales</nuxt-link>
   </div>
 </template>
 

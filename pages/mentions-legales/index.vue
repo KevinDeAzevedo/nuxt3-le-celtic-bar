@@ -1,7 +1,18 @@
 <script></script>
 
 <template>
-  <h1>Mentions légales</h1>
+  <div class='container'>
+    <div class='content mentions'>
+      <ContentDoc path="/mentions-legales" />
+    </div>
+  </div>
+  <Footer/>
 </template>
 
-<style></style>
+<style>
+.mentions img {
+  width: 200px;
+  padding-right: 30px;
+  height: auto;
+}
+</style>
