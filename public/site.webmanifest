@@ -1,6 +1,6 @@
 {
-        "name": "Nuxt 3 Base",
-        "short_name": "N3 Base",
+        "name": "Le Celtic Bar",
+        "short_name": "Le Celtic",
         "icons": [
             {
                 "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
                 "type": "image/png"
             }
         ],
-        "theme_color": "#002E3B",
-        "background_color": "#002E3B",
+        "theme_color": "#2A1111",
+        "background_color": "#2A1111",
         "display": "standalone"
     }
