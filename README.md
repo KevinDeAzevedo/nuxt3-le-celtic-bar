@@ -1,8 +1,15 @@
-# Nuxt 3 Minimal Starter
+![Celtic bar Project](https://res.cloudinary.com/kevindeazevedo/image/upload/v1678028019/Github/Celtic-project_ffvbps.webp)
+
+# Server Side Rendering (Celtic Bar project)
+**Framework utilisé : Nuxt3 + Nuxt Content**
+
+[Voir la version en ligne](https://www.le-celtic-bar.fr/)
+
+## Nuxt 3 Minimal Starter
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Setup
+### Setup
 
 Make sure to install the dependencies:
 
@@ -17,7 +24,7 @@ npm install
 pnpm install --shamefully-hoist
 ```
 
-## Development Server
+### Development Server
 
 Start the development server on http://localhost:3000
 
@@ -25,7 +32,7 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Production
+### Production
 
 Build the application for production:
 
