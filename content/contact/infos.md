@@ -4,7 +4,7 @@ title : 'Le Celtic bar – Contactez nous'
 
 ### Sur l’île d’Yonne proche de la Gare
 
-03 58 45 60 73
+09 86 63 03 04
 <br />
 contact@le-celtic-bar.fr
 <br />
