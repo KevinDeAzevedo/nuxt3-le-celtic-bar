@@ -15,8 +15,12 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/strapi'
+    '@nuxtjs/strapi',
+    'nuxt-gtag'
   ],
+  gtag: {
+    id: 'GTM-W9RF3JN'
+  },
   strapi: {
     url: process.env.STRAPI_URL,
     prefix: '/api',
