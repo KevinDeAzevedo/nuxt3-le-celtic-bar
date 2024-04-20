@@ -15,7 +15,7 @@ useHead({
     <div class="container">
       <div class="content">
         <div class="content-item">
-          <ContentDoc path="/intro" />
+          <LazyContentDoc path="/intro" />
         </div>
         <div class="content-item">
           <div class='content-item-photo'>

@@ -7,7 +7,7 @@
           <h2>Les boissons</h2>
         </div>
         <div class="liste-produit">
-          <ContentList path="/produits/boissons" v-slot="{ list }">
+          <LazyContentList path="/produits/boissons" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
           <img
             :src="`/images/produits/${produit.image}`"
@@ -21,7 +21,7 @@
             <div class="separation"></div>
           </div>
         </div>
-      </ContentList>
+      </LazyContentList>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
           <h2>Les bières</h2>
         </div>
         <div class="liste-produit">
-          <ContentList path="/produits/bieres" v-slot="{ list }">
+          <LazyContentList path="/produits/bieres" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
           <img
             :src="`/images/produits/${produit.image}`"
@@ -45,7 +45,7 @@
             <div class="separation"></div>
           </div>
         </div>
-      </ContentList>
+      </LazyContentList>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
           <h2>Vins Et Spiritueux</h2>
         </div>
         <div class="liste-produit">
-          <ContentList path="/produits/vins" v-slot="{ list }">
+          <LazyContentList path="/produits/vins" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
           <img
             :src="`/images/produits/${produit.image}`"
@@ -69,7 +69,7 @@
             <div class="separation"></div>
           </div>
         </div>
-      </ContentList>
+      </LazyContentList>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@
           <h2>Les cocktails</h2>
         </div>
         <div class="liste-produit">
-          <ContentList path="/produits/cocktails" v-slot="{ list }">
+          <LazyContentList path="/produits/cocktails" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
           <img
             :src="`/images/produits/${produit.image}`"
@@ -93,7 +93,7 @@
             <div class="separation"></div>
           </div>
         </div>
-      </ContentList>
+      </LazyContentList>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
           <h2>Les sandwichs</h2>
         </div>
         <div class="liste-produit">
-          <ContentList path="/produits/sandwichs" v-slot="{ list }">
+          <LazyContentList path="/produits/sandwichs" v-slot="{ list }">
             <div v-for="produit in list" :key="produit._path" class="produit">
           <img
             :src="`/images/produits/${produit.image}`"
@@ -117,7 +117,7 @@
             <div class="separation"></div>
           </div>
         </div>
-      </ContentList>
+      </LazyContentList>
         </div>
       </div>
     </div>

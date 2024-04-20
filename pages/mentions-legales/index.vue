@@ -8,7 +8,7 @@ useHead({
 <template>
   <div class='container'>
     <div class='content mentions'>
-      <ContentDoc path="/mentions-legales" />
+      <LazyContentDoc path="/mentions-legales" />
     </div>
   </div>
   <Footer/>

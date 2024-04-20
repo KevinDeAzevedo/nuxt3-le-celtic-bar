@@ -6,7 +6,7 @@ var heroImage = ref('/images/match-foot-sens-celtic.webp');
   <div>
     <div class="hero">
       <div class='content'>
-        <ContentDoc path="/match" />
+        <LazyContentDoc path="/match" />
       </div>
       <div
         class="hero-image"

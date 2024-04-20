@@ -6,7 +6,7 @@
       <h2>Nos produits stars</h2>
     </div>
     <div class="liste-produit">
-      <ContentList path="/produits-stars" v-slot="{ list }">
+      <LazyContentList path="/produits-stars" v-slot="{ list }">
         <div v-for="produit in list" :key="produit._path" class="produit">
           <img
             :src="`/images/produits/${produit.image}`"
@@ -20,7 +20,7 @@
             <div class="separation"></div>
           </div>
         </div>
-      </ContentList>
+      </LazyContentList>
     </div>
     <div class="centered-item">
       <NuxtLink to="/carte"

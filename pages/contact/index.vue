@@ -123,7 +123,7 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.webp');
         </div>
         <div class="content-item" id='infos'>
           <h2 class="middle-title">Se rencontrer</h2>
-          <ContentDoc path="/contact/infos" />
+          <LazyContentDoc path="/contact/infos" />
         </div>
         </div>
       </div>
