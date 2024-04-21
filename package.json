@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@nuxtjs/strapi": "^1.7.1",
-    "nuxt": "3.9.2",
+    "nuxt": "^3.11.2",
     "nuxt-gtag": "^2.0.5"
   },
   "dependencies": {
