@@ -1,17 +1,24 @@
 <script setup>
-const { data: ServicesList } = useAsyncData('ServicesList', () => {
-  return queryContent('/services').find();
-});
+// const { data: ServicesList } = useAsyncData('ServicesList', () => {
+//   return queryContent('/services').find();
+// });
+
+// call the API here, use data const for use it
+const runtimeConfig = useRuntimeConfig() // variables access
+const { data, pending, error, refresh } = await useAsyncData(
+  () => $fetch(runtimeConfig.public.strapiUrl + `/api/services?populate=icon`)
+)
+
 </script>
 
 <template>
   <div class='card-list'>
-    <div v-for="Service in ServicesList" :key="Service._path" class="card">
-    <img :src="`/images/${Service.icon}`" alt="icone" />
+    <div v-for="Service in data.data" :key="Service.id" class="card">
+    <img :src="`${runtimeConfig.public.strapiUrl + Service.attributes.icon.data.attributes.url}`" alt="icone" />
     <h3>
-      {{ Service.title }}
+      {{ Service.attributes.title }}
     </h3>
-    <p>{{ Service.description }}</p>
+    <p>{{ Service.attributes.text }}</p>
   </div>
   </div>
 </template>

@@ -7,6 +7,7 @@ useHead({
   htmlAttrs: {
       lang: 'fr'
     },
+    title: 'Le Celtic Bar - Contact',
   meta: [
     { name: 'description', content: `Entrez en contact avec nous au Celtic Bar de Sens pour toutes vos questions et pour garantir un moment inoubliable. Nous sommes là pour vous aider.` }
   ]
@@ -73,6 +74,16 @@ let comments = ref('');
 let response = ref('');
 
 var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.webp');
+
+// render markdown
+import markdownit from 'markdown-it'
+const md = markdownit()
+// call the API here, use data const for use it
+const runtimeConfig = useRuntimeConfig() // variables access
+const { data, pending, error, refresh } = await useAsyncData(
+  () => $fetch(runtimeConfig.public.strapiUrl + `/api/contact`)
+)
+
 </script>
 
 <template>
@@ -123,7 +134,7 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.webp');
         </div>
         <div class="content-item" id='infos'>
           <h2 class="middle-title">Se rencontrer</h2>
-          <LazyContentDoc path="/contact/infos" />
+          <div class='description' v-html="md.render(data.data.attributes.description)"></div>
         </div>
         </div>
       </div>
@@ -132,6 +143,24 @@ var heroImage = ref('/images/cafe-le-celtic-bar-sens-hero.webp');
 </template>
 
 <style>
+.description a{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px 42px;
+  margin: 10px 0;
+  font-size: 12px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2A1111;
+}
+
 #firstNameErrorMsg, #lastNameErrorMsg, #emailErrorMsg {
   color: red;
 }

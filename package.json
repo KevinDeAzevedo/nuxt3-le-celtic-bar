@@ -11,5 +11,8 @@
     "@nuxtjs/strapi": "^1.7.1",
     "nuxt": "^3.11.2",
     "nuxt-gtag": "^2.0.5"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
   }
 }

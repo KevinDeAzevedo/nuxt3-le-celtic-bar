@@ -5,7 +5,7 @@ useHead({
   htmlAttrs: {
       lang: 'fr'
     },
-  title: 'Le Celtic bar – La Carte des boissons',
+  title: 'Le Celtic Bar – Carte',
   meta: [
     { name: 'description', content: `Rejoignez-nous pour une expérience culinaire unique au Celtic Bar de Sens. Notre carte de boissons variée comprend des cocktails classiques, des bières locales et plus encore pour convenir à tous les goûts.` }
   ]

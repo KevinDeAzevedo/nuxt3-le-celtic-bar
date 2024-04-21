@@ -1,12 +1,25 @@
 <script setup lang="ts">
+
+// render markdown
+import markdownit from 'markdown-it'
+const md = markdownit()
+
 useHead({
   htmlAttrs: {
       lang: 'fr'
     },
+  title: 'Le Celtic Bar - Entre les deux ponts à Sens',
   meta: [
     { name: 'description', content: `Découvrez l'ambiance chaleureuse et les boissons exceptionnelles de notre bar situé en plein coeur de Sens. Rejoignez-nous pour passer une soirée mémorable avec des amis ou en solo.` }
   ]
 })
+
+// call the API here, use data const for use it
+const runtimeConfig = useRuntimeConfig() // variables access
+const { data, pending, error, refresh } = await useAsyncData(
+  () => $fetch(runtimeConfig.public.strapiUrl + `/api/home`)
+)
+
 </script>
 
 <template>
@@ -15,8 +28,11 @@ useHead({
     <div class="container">
       <div class="content">
         <div class="content-item">
-          <LazyContentDoc path="/intro" />
-        </div>
+          <div v-html="md.render(data.data.attributes.intro)"></div>
+          <button class='secondary-btn'>
+          <a target='_blank' href="https://www.google.com/maps/place/Le+Celtic+Bar/@48.1974739,3.2726454,17z/data=!3m2!4b1!5s0x47ef101c71583c83:0xd37053c0adc6e89c!4m5!3m4!1s0x47ef101c74fde741:0xe4dbf7fd9bd0c7eb!8m2!3d48.1974703!4d3.2748341?coh=164777&entry=tt&shorturl=1">Itinéraire</a>
+        </button>
+      </div>
         <div class="content-item">
           <div class='content-item-photo'>
             <img src="/images/Jose-du-bar-le-celtic.webp" alt="Photo du patron derrière son bar servant un cocktail" />

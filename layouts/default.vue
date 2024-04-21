@@ -105,7 +105,7 @@ a {
 }
 
 a:hover {
-  color: #ED9C3B;
+  /* color: #ED9C3B; */
 }
 
 button {
@@ -171,6 +171,11 @@ button.primary-btn:hover, .secondary-btn:hover{
 .link-secondary-button:hover {
   color: #2A1111;
   background-color: #FDDAB0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 </style>

@@ -1,4 +1,18 @@
-<script setup></script>
+<script setup>
+// call the API here, use data const for use it
+const runtimeConfig = useRuntimeConfig(); // variables access
+// produits stars
+const {
+  data: starsData,
+  pending: starsPending,
+  error: starsError,
+} = await useAsyncData(() =>
+  $fetch(
+    runtimeConfig.public.strapiUrl +
+      `/api/categories?filters[name][$eq]=stars&populate=deep`
+  )
+);
+</script>
 
 <template>
   <div class="content-wrapper">
@@ -6,21 +20,19 @@
       <h2>Nos produits stars</h2>
     </div>
     <div class="liste-produit">
-      <LazyContentList path="/produits-stars" v-slot="{ list }">
-        <div v-for="produit in list" :key="produit._path" class="produit">
-          <img
-            :src="`/images/produits/${produit.image}`"
-            alt="image"
-            class="image-produit"
-          />
-          <div class="info-produit">
-            <p class="product">{{ produit.title }}</p>
-            <p class="description">{{ produit.description }}</p>
-            <p class="price">{{ produit.price }}€</p>
-            <div class="separation"></div>
+      <div v-for="produit in starsData.data[0].attributes.produits.data" :key="produit.id" class="produit">
+            <img
+            :src="`${runtimeConfig.public.strapiUrl + produit.attributes.image.data.attributes.url}`"
+              alt="image"
+              class="image-produit"
+            />
+            <div class="info-produit">
+              <p class="product">{{ produit.attributes.title }}</p>
+              <p class="description">{{ produit.attributes.description }}</p>
+              <p class="price">{{ produit.attributes.price }}€</p>
+              <div class="separation"></div>
+            </div>
           </div>
-        </div>
-      </LazyContentList>
     </div>
     <div class="centered-item">
       <NuxtLink to="/carte"

@@ -1,19 +1,26 @@
 <script setup>
-const { data: AvisList } = useAsyncData('AvisList', () => {
-  return queryContent('/avis').find();
-});
+// const { data: AvisList } = useAsyncData('AvisList', () => {
+//   return queryContent('/avis').find();
+// });
+
+// call the API here, use data const for use it
+const runtimeConfig = useRuntimeConfig() // variables access
+const { data, pending, error, refresh } = await useAsyncData(
+  () => $fetch(runtimeConfig.public.strapiUrl + `/api/avis`)
+)
+
 </script>
 
 <template>
   <div class="content">
       <h2>Les avis de nos clients</h2>
     <div class="content-items">
-      <div v-for="Avis in AvisList" :key="Avis._path" class="avis-card">
+      <div v-for="Avis in data.data" :key="Avis._path" class="avis-card">
         <img class='bubble' src="~/assets/bubble-speech.svg" alt="Illustration de bulle de dialogue">
-        <p>{{ Avis.text }}</p>
+        <p>{{ Avis.attributes.text }}</p>
         <div class='baseline'>
-          <p class='scoring'>{{ Avis.score }}/5</p>
-          <p class='name'>{{ Avis.name }}</p>
+          <p class='scoring'>{{ Avis.attributes.score }}/5</p>
+          <p class='name'>{{ Avis.attributes.name }}</p>
         </div>
       </div>
     </div>
