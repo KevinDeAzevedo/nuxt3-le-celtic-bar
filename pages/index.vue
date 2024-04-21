@@ -20,6 +20,7 @@ const { data, pending, error, refresh } = await useAsyncData(
   () => $fetch(runtimeConfig.public.strapiUrl + `/api/home`)
 )
 
+
 </script>
 
 <template>

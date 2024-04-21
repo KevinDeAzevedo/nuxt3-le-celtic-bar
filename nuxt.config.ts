@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/content',
     '@nuxtjs/strapi',
     'nuxt-gtag'
   ],
@@ -27,13 +26,5 @@ export default defineNuxtConfig({
     version: 'v4',
     cookie: {},
     cookieName: 'strapi_jwt'
-  },
-  content: {
-    markdown: {
-      tags: {
-        h2: 'ProseH2',
-        h3: 'ProseH3',
-      }
-    }
   },
 });
